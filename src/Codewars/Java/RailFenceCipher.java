@@ -1,7 +1,5 @@
 package Codewars.Java;
 
-import static org.junit.Assert.assertEquals;
-
 public class RailFenceCipher {
     static String encode(String s, int n) {
         if (s.isEmpty() || n <= 1) {

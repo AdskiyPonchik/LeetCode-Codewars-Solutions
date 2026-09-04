@@ -32,7 +32,7 @@ src/
 
 ## 🏃 Running a solution
 
-Solutions are self-contained classes. Open the repo in IntelliJ IDEA (project files included) or compile any file directly:
+Solutions are self-contained classes. Import `pom.xml` into IntelliJ IDEA or compile any file directly:
 
 ```bash
 javac src/NeedCode/Tree/MaxPathSum.java
