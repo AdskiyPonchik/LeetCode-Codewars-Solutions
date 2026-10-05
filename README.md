@@ -1,30 +1,41 @@
-# Leet[code]wars
+# 🧠 LeetCode & Codewars Solutions
 
-Решения задач LeetCode, NeetCode и Codewars. Для Java нужны JDK 21 и Maven 3.9+.
+My personal grind log: **algorithm & data-structure solutions** from LeetCode (following the **NeetCode roadmap**) and Codewars katas, written mostly in **Java** with some **Python**.
 
-## Открыть в IntelliJ IDEA
+![Java](https://img.shields.io/badge/Java-main-orange?logo=openjdk)
+![Python](https://img.shields.io/badge/Python-some-3776AB?logo=python&logoColor=white)
+![NeetCode](https://img.shields.io/badge/roadmap-NeetCode-blueviolet)
 
-1. Открыть корневой `pom.xml` через **File → Open → Open as Project**.
-2. Выбрать **Project SDK: 21**.
-3. В окне Maven выполнить **Reload All Maven Projects**.
+## 📁 Structure
 
-Если проект уже открыт со старой структурой, закрыть его и открыть заново
-через `pom.xml`. Maven задаёт корень исходников `src` и версию Java.
-
-`.iml` — локальное описание модуля IDEA: исходники, SDK, зависимости и пути
-компиляции. IDEA создаёт его при импорте Maven. `.idea/`, `*.iml` и `target/`
-исключены из Git; для восстановления проекта достаточно исходников и `pom.xml`.
-
-## Сборка и запуск
-
-```sh
-mvn clean verify
-java -cp target/classes main.Main
+```
+src/
+├── NeedCode/            # LeetCode problems, grouped by NeetCode topics
+│   ├── Backtracking/    #   Subsets, Combination Sum, Permutations, ...
+│   ├── BinarySearch/    #   Rotated arrays, Koko Eating Bananas, ...
+│   ├── Heap/            #   Kth Largest, Task Scheduler, Median from Stream, ...
+│   ├── Intervals/       #   Insert / Merge / Non-overlapping intervals
+│   ├── LinkedList/      #   Reverse, Merge K Lists, LRU Cache, ...
+│   ├── SlidingWindow/   #   Longest Substring, Min Window, ...
+│   ├── Stack/           #   Valid Parentheses, Car Fleet, ...
+│   ├── Tree/            #   Traversals, LCA, Serialize/Deserialize, Max Path Sum, ...
+│   └── Tries/           #   Prefix Tree, Word Search II, ...
+├── Leetcode/            # other LeetCode problems (Java / Python)
+└── Codewars/            # katas (Java / Python): ciphers, parsers, simple VMs, ...
 ```
 
-Сохранена текущая раскладка: `src/Leetcode`, `src/NeedCode`, `src/Codewars` и
-`src/main/Main.java`. Python-решения Maven не собирает.
+## 🎯 What this repo shows
 
-Для будущих Java-тестов в POM отведён отдельный каталог `tests/`, чтобы они
-не попадали в основные исходники. Сейчас автотестов и тестовых зависимостей
-нет: успешная сборка проверяет компиляцию, но не правильность алгоритмов.
+- **Topic-by-topic mastery** — each folder maps to a core interview pattern: two pointers over sorted data, monotonic stacks, sliding windows, heaps, backtracking, tree recursion, tries
+- **Hard problems included** — e.g. *Binary Tree Maximum Path Sum*, *Serialize and Deserialize Binary Tree*, *Rail Fence Cipher*, *Simple Assembler* (a mini VM interpreter)
+- **Two languages** — the same algorithmic thinking expressed in Java and Python
+
+## 🏃 Running a solution
+
+Solutions are self-contained classes. Import `pom.xml` into IntelliJ IDEA or compile any file directly:
+
+```bash
+javac src/NeedCode/Tree/MaxPathSum.java
+```
+
+> This repo is updated as I grind — new topics and solutions land regularly. 💪
