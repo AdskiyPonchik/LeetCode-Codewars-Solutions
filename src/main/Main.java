@@ -1,13 +1,11 @@
 package main;
 
-import Leetcode.AreNumbersAscending;
 
-import java.util.Arrays;
+import Leetcode.Java.HappyNumber;
 
 public class Main {
     public static void main(String[] args) {
-        AreNumbersAscending test = new AreNumbersAscending();
-        System.out.println(test.areNumbersAscending("hello world 5 x 5"));
-        return;
+        HappyNumber test = new HappyNumber();
+        System.out.println(test.isHappy(2));
     }
 }
