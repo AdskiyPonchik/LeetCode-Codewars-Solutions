@@ -1,11 +1,11 @@
 package main;
 
 
-import Leetcode.Java.HappyNumber;
+import Leetcode.Java.Easy.MissingNumber;
 
 public class Main {
     public static void main(String[] args) {
-        HappyNumber test = new HappyNumber();
-        System.out.println(test.isHappy(2));
+        MissingNumber test = new MissingNumber();
+        System.out.println(test.missingNumber(new int[]{3,0,1}));
     }
 }

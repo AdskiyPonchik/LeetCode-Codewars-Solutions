@@ -1,8 +1,8 @@
-package Leetcode;
+package Leetcode.Java;
 
 import java.util.ArrayList;
 
-// Difficulty: Medium
+// Shared linked-list node; not a standalone LeetCode problem.
 
 public class ListNode {
     int val;

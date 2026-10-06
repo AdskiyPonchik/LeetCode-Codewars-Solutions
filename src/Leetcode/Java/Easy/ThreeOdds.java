@@ -1,4 +1,4 @@
-package Leetcode;
+package Leetcode.Java.Easy;
 
 // Difficulty: Easy
 // lol. Solved in 1 minute.

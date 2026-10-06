@@ -1,6 +1,6 @@
-package Leetcode;
+package Leetcode.Java.Middle;
 
-// Difficulty: Hard
+// Difficulty: Medium
 
 public class Choose_K_Elems {
     public static class Solution {
