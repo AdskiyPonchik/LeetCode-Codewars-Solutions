@@ -1,11 +1,12 @@
 package main;
 
 
-import Leetcode.Java.Easy.MissingNumber;
+import Leetcode.Middle.CountNicePairs;
 
 public class Main {
     public static void main(String[] args) {
-        MissingNumber test = new MissingNumber();
-        System.out.println(test.missingNumber(new int[]{3,0,1}));
+        CountNicePairs test = new CountNicePairs();
+        System.out.println(test.countNicePairs(new int[]{42, 11, 1, 97}));
+        System.out.println(test.countNicePairs(new int[] {13,10,35,24,76}));
     }
 }
