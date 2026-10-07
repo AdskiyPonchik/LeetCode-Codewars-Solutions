@@ -1,12 +1,16 @@
 package main;
 
 
-import Leetcode.Middle.CountNicePairs;
+import Leetcode.Easy.MonotonicArray;
 
 public class Main {
     public static void main(String[] args) {
-        CountNicePairs test = new CountNicePairs();
-        System.out.println(test.countNicePairs(new int[]{42, 11, 1, 97}));
-        System.out.println(test.countNicePairs(new int[] {13,10,35,24,76}));
+        MonotonicArray test = new MonotonicArray();
+        System.out.println(test.isMonotonic(new int[]{1, 2, 2, 3})); //true
+        System.out.println(test.isMonotonic(new int[]{6, 5, 4, 4})); //true
+        System.out.println(test.isMonotonic(new int[]{7, 7, 7})); //true
+        System.out.println(test.isMonotonic(new int[]{1, 3, 2})); //false
+        System.out.println(test.isMonotonic(new int[]{1, 1, 0})); //true
+        System.out.println(test.isMonotonic(new int[]{1, 1, 2})); //true
     }
 }
