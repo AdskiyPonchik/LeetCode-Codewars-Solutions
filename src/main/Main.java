@@ -1,16 +1,13 @@
 package main;
 
 
-import Leetcode.Easy.MonotonicArray;
+import Leetcode.Easy.MaximumAverageSubarray;
+
 
 public class Main {
     public static void main(String[] args) {
-        MonotonicArray test = new MonotonicArray();
-        System.out.println(test.isMonotonic(new int[]{1, 2, 2, 3})); //true
-        System.out.println(test.isMonotonic(new int[]{6, 5, 4, 4})); //true
-        System.out.println(test.isMonotonic(new int[]{7, 7, 7})); //true
-        System.out.println(test.isMonotonic(new int[]{1, 3, 2})); //false
-        System.out.println(test.isMonotonic(new int[]{1, 1, 0})); //true
-        System.out.println(test.isMonotonic(new int[]{1, 1, 2})); //true
+        MaximumAverageSubarray test = new MaximumAverageSubarray();
+        System.out.println(test.findMaxAverage(new int[]{1, 12, -5, -6, 50, 3}, 4)); //12.75
+        System.out.println(test.findMaxAverage(new int[]{5}, 1)); //5.0
     }
 }
