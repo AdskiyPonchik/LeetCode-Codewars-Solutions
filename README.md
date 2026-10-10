@@ -1,9 +1,8 @@
 # 🧠 LeetCode & Codewars Solutions
 
-My personal grind log: **algorithm & data-structure solutions** from LeetCode (following the **NeetCode roadmap**) and Codewars katas, written mostly in **Java** with some **Python**.
+My personal grind log: **algorithm & data-structure solutions** from LeetCode (following the **NeetCode roadmap**) and Codewars katas, written in **Java**.
 
 ![Java](https://img.shields.io/badge/Java-main-orange?logo=openjdk)
-![Python](https://img.shields.io/badge/Python-some-3776AB?logo=python&logoColor=white)
 ![NeetCode](https://img.shields.io/badge/roadmap-NeetCode-blueviolet)
 
 ## 📁 Structure
@@ -28,7 +27,6 @@ src/
 
 - **Topic-by-topic mastery** — each folder maps to a core interview pattern: two pointers over sorted data, monotonic stacks, sliding windows, heaps, backtracking, tree recursion, tries
 - **Hard problems included** — e.g. *Binary Tree Maximum Path Sum*, *Serialize and Deserialize Binary Tree*, *Rail Fence Cipher*, *Simple Assembler* (a mini VM interpreter)
-- **Two languages** — the same algorithmic thinking expressed in Java and Python
 
 ## 🏃 Running a solution
 
