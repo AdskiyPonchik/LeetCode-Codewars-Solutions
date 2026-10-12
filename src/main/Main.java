@@ -1,14 +1,12 @@
 package main;
 
 
-import Leetcode.Easy.MinimumMoves;
+import Leetcode.Middle.MinimumSizeSubarraySum;
 
 
 public class Main {
     public static void main(String[] args) {
-        MinimumMoves test = new MinimumMoves();
-        System.out.println(test.minimumMoves("XXX")); //1
-        System.out.println(test.minimumMoves("XXOX")); //2
-        System.out.println(test.minimumMoves("OOOO")); //0
+        MinimumSizeSubarraySum test = new MinimumSizeSubarraySum();
+        System.out.println(test.minSubArrayLen(7, new int[]{2, 3, 1, 2, 4, 3}));
     }
 }
