@@ -1,12 +1,23 @@
 package main;
 
 
-import Leetcode.Middle.MinimumSizeSubarraySum;
+import Leetcode.Middle.NumMatrix;
 
 
 public class Main {
     public static void main(String[] args) {
-        MinimumSizeSubarraySum test = new MinimumSizeSubarraySum();
-        System.out.println(test.minSubArrayLen(7, new int[]{2, 3, 1, 2, 4, 3}));
+        int[][] matrix = {
+                {3, 0, 1, 4, 2},
+                {5, 6, 3, 2, 1},
+                {1, 2, 0, 1, 5},
+                {4, 1, 0, 1, 7},
+                {1, 0, 3, 0, 5}
+        };
+
+        NumMatrix numMatrix = new NumMatrix(matrix);
+
+        System.out.println(numMatrix.sumRegion(2, 1, 4, 3)); //  8
+        System.out.println(numMatrix.sumRegion(1, 1, 2, 2)); // 11
+        System.out.println(numMatrix.sumRegion(1, 2, 2, 4)); //  12
     }
 }
