@@ -1,21 +1,18 @@
 package main;
 
 
-import Leetcode.Middle.AsteroidCollision;
-
-
-import Leetcode.Middle.StockSpanner;
+import Leetcode.Middle.SimplifyPath;
 
 public class Main {
     public static void main(String[] args) {
-        StockSpanner spanner = new StockSpanner();
+        SimplifyPath solver = new SimplifyPath();
 
-        System.out.println(spanner.next(100)); // Ожидается: 1
-        System.out.println(spanner.next(80));  // Ожидается: 1
-        System.out.println(spanner.next(60));  // Ожидается: 1
-        System.out.println(spanner.next(70));  // Ожидается: 2
-        System.out.println(spanner.next(60));  // Ожидается: 1
-        System.out.println(spanner.next(75));  // Ожидается: 4
-        System.out.println(spanner.next(85));  // Ожидается: 6
+        String path1 = "/neetcode/practice//...///../courses";
+        String path2 = "/..//";
+        String path3 = "/..//_home/a/b/..///";
+
+        System.out.println(solver.simplifyPath(path1)); // Ожидается: /neetcode/practice/courses
+        System.out.println(solver.simplifyPath(path2)); // Ожидается: /
+        System.out.println(solver.simplifyPath(path3)); // Ожидается: /_home/a
     }
 }
