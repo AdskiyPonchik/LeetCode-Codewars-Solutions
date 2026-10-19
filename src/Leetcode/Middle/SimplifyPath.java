@@ -13,19 +13,21 @@ public class SimplifyPath {
             }
             if (s.equals("..")) {
                 if (!stack.isEmpty()) {
-                    stack.pop();
+                    stack.removeLast();
                 }
             } else {
-                stack.push(s);
+                stack.addLast(s);
             }
         }
         if (stack.isEmpty()) {
             return "/";
         }
         StringBuilder result = new StringBuilder();
-        for (String dir : stack) {
-            result.insert(0, "/" + dir);
+
+        while (!stack.isEmpty()) {
+            result.append('/').append(stack.pop());
         }
+
         return result.toString();
     }
 }
