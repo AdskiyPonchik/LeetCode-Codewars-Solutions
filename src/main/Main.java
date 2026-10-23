@@ -1,6 +1,6 @@
 package main;
 
-import Leetcode.Easy.QueueUsingStack;
+import Leetcode.NeetCode.Stack.QueueUsingStack;
 
 public class Main {
     public static void main(String[] args) {

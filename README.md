@@ -1,39 +1,40 @@
-# 🧠 LeetCode & Codewars Solutions
+# LeetCode & Codewars solutions
 
-My personal grind log: **algorithm & data-structure solutions** from LeetCode (following the **NeetCode roadmap**) and Codewars katas, written in **Java**.
+My Java practice repository for LeetCode problems and Codewars katas.
+LeetCode solutions are organized by topic, with NeetCode list membership separated from additional practice.
 
-![Java](https://img.shields.io/badge/Java-main-orange?logo=openjdk)
-![NeetCode](https://img.shields.io/badge/roadmap-NeetCode-blueviolet)
+## Structure
 
-## 📁 Structure
-
-```
+```text
 src/
-├── NeedCode/            # LeetCode problems, grouped by NeetCode topics
-│   ├── Backtracking/    #   Subsets, Combination Sum, Permutations, ...
-│   ├── BinarySearch/    #   Rotated arrays, Koko Eating Bananas, ...
-│   ├── Heap/            #   Kth Largest, Task Scheduler, Median from Stream, ...
-│   ├── Intervals/       #   Insert / Merge / Non-overlapping intervals
-│   ├── LinkedList/      #   Reverse, Merge K Lists, LRU Cache, ...
-│   ├── SlidingWindow/   #   Longest Substring, Min Window, ...
-│   ├── Stack/           #   Valid Parentheses, Car Fleet, ...
-│   ├── Tree/            #   Traversals, LCA, Serialize/Deserialize, Max Path Sum, ...
-│   └── Tries/           #   Prefix Tree, Word Search II, ...
-├── Leetcode/            # other LeetCode problems (Java / Python)
-└── Codewars/            # katas (Java / Python): ciphers, parsers, simple VMs, ...
+├── Leetcode/
+│   ├── NeetCode/          # NeetCode 150 / 250 tasks, organized by all 18 topics
+│   │   ├── ArraysAndHashing/
+│   │   ├── Backtracking/
+│   │   ├── Graphs/
+│   │   ├── DynamicProgramming1D/
+│   │   ├── DynamicProgramming2D/
+│   │   ├── Stack/
+│   │   └── ...
+│   ├── Additional/        # Other LeetCode tasks, also organized by topic
+│   ├── ListNode.java      # Existing shared helper
+│   └── README.md          # Topic map, problem IDs, difficulty, membership, links
+├── Codewars/              # Codewars katas
+└── main/
+    └── Main.java          # Current local example/check runner
 ```
 
-## 🎯 What this repo shows
+See the [LeetCode topic map and complete index](src/Leetcode/README.md) for every implementation, including alternative solutions and unfinished stubs.
+All 18 NeetCode topic directories are present; an empty directory is a planned topic, not a completed one.
+Accepted totals, local source coverage, and current understanding are separate measures.
 
-- **Topic-by-topic mastery** — each folder maps to a core interview pattern: two pointers over sorted data, monotonic stacks, sliding windows, heaps, backtracking, tree recursion, tries
-- **Hard problems included** — e.g. *Binary Tree Maximum Path Sum*, *Serialize and Deserialize Binary Tree*, *Rail Fence Cipher*, *Simple Assembler* (a mini VM interpreter)
+## Build and run
 
-## 🏃 Running a solution
-
-Solutions are self-contained classes. Import `pom.xml` into IntelliJ IDEA or compile any file directly:
+Requires Java 21 and Maven. Import `pom.xml` into IntelliJ IDEA or run:
 
 ```bash
-javac src/NeedCode/Tree/MaxPathSum.java
+mvn test
+java -cp target/classes main.Main
 ```
 
-> This repo is updated as I grind — new topics and solutions land regularly. 💪
+`Main` contains the current manual checks. The Maven test-source directory is `tests/`; it currently has no automated tests.
