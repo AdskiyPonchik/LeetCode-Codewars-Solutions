@@ -16,6 +16,7 @@ out/
 
 # IDE - VS Code
 .vscode/
+/study.*
 
 # OS files
 .DS_Store
