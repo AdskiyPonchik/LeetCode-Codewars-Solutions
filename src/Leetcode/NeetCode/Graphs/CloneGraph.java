@@ -34,12 +34,12 @@ public class CloneGraph {
         queue.addLast(node);
         while (!queue.isEmpty()) {
             Node curNode = queue.removeFirst();
+            Node currentCopy = copies.get(curNode);
             for (Node smallNode : curNode.neighbors) {
                 if (!copies.containsKey(smallNode)) {
                     copies.put(smallNode, new Node(smallNode.val));
                     queue.addLast(smallNode);
                 }
-                Node currentCopy = copies.get(curNode);
                 Node neighborCopy = copies.get(smallNode);
                 currentCopy.neighbors.add(neighborCopy);
             }
