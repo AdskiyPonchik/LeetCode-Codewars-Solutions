@@ -1,6 +1,6 @@
 package main;
 
-import Leetcode.NeetCode.DynamicProgramming1D.HouseRobberII;
+import Leetcode.NeetCode.Backtracking.PalindromePart;
 
 public class Main {
     public static void main(String[] args) {
