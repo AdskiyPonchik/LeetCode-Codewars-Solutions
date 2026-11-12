@@ -7,27 +7,18 @@ import java.util.List;
 public class Subsets {
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
-        backtrack(0, new ArrayList<>(), nums, result);
+        backtrack(0, nums, new ArrayList<>(), result);
         return result;
     }
 
-    private void backtrack(int index, List<Integer> current, int[] nums, List<List<Integer>> result) {
-        if (index == nums.length) {
+    private void backtrack(int startindex, int[] nums,List<Integer> current, List<List<Integer>> result){
+        if (startindex == nums.length) {
             result.add(new ArrayList<>(current));
             return;
         }
-
-        current.add(nums[index]);
-        backtrack(index + 1, current, nums, result);
-
-        current.remove(current.size() - 1);
-
-        backtrack(index + 1, current, nums, result);
-    }
-
-    public static void main(String[] args){
-        Subsets solution = new Subsets();
-        int[] arr = new int[]{1,2,1};
-        System.out.println(Arrays.toString(solution.subsets(arr).toArray()));
+        current.add(nums[startindex]);
+        backtrack(startindex+1, nums, current, result);
+        current.remove(current.size()-1);
+        backtrack(startindex+1, nums, current, result);
     }
 }
